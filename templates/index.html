@@ -22,24 +22,20 @@
             
           </nav>
          
-          <main role="main" class="container">
-            
-            <div class="jumbotron">
-              <div class="mx-auto" style="width: 300px; height: 400px;">
-                <div class="card" style="width: 32rem;">
-                  <img class="card-img-top" src= "{{ apod.hdurl }}" alt="{{ apod.url }}">
-                  <div class="card-body">
-                    <h5 class="card-title">{{ apod.title }}</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">{{ apod.date }}</h6>
-                    <p class="card-text">{{ apod.explanation }}</p>
-                  </div>
-              </div>    
+          <div class="jumbotron">
+            <div class="container text-center">
+              <h1 class="display-3">{{ apod.date }}</h1>
+              <img src="{{ apod.hdurl }}" class="rounded" alt="{{ apod.url }}" width="500" height="600">
             </div>
-          
-          </main>
-
-         
-    
+          </div>
+        
+          <div class="jumbotron">
+            <div class="container">
+              <h2 class="display-3">{{ apod.title }}</h2>
+              <p>{{ apod.explanation}}</p>
+            </div>
+          </div>
+                   
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-
         DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

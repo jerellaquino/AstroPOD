@@ -21,27 +21,22 @@
           
             
           </nav>
-
          
-
-          <div class="container"> 
+          <main role="main" class="container">
             
-            <div class="row">
-              <div class="mx-auto" style="width: 200px;">
-                <div class="col-md">
-                  <div class="card" style="width: 22rem;">
-                      <img class="card-img-top" src= "{{ apod.url }}" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">{{ apod.title }}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">{{ apod.date }}</h6>
-                        <p class="card-text">{{ apod.explanation }}</p>
-                      </div>
+            <div class="jumbotron">
+              <div class="mx-auto" style="width: 300px; height: 400px;">
+                <div class="card" style="width: 32rem;">
+                  <img class="card-img-top" src= "{{ apod.hdurl }}" alt="{{ apod.url }}">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ apod.title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ apod.date }}</h6>
+                    <p class="card-text">{{ apod.explanation }}</p>
                   </div>
-                </div>  
-              </div>
+              </div>    
             </div>
-
-          </div>
+          
+          </main>
 
          
     
